@@ -1,8 +1,8 @@
 
 # Coding WE Project 
 
-Idee: Evaluierung diverser JavaScript Frameworks
-Hier: AngularJS mit Bootstrap und JQuery
+* Idee: Evaluierung diverser JavaScript Frameworks
+* Hier: AngularJS mit Bootstrap und JQuery
 
 ## Business Prozess
 
@@ -16,9 +16,9 @@ Hier: AngularJS mit Bootstrap und JQuery
 AngularJS trennt:
 
 * deklarative HTML-Seiten mit Validierung und
-* imperative JavaScript-Controllern mit Model
+* imperative JavaScript-Controller mit ViewModels
 
 ## Implementierung
 
-* Modelattribute werden vom Framework on-the-fly von HTML Definition aus erstellt
+* Modelattribute werden vom Framework on-the-fly aus HTML-Dokumenten erstellt
 * Per Convention sollte die Modeldefinition mit allen Attributen pro View (im Controller) dennoch hinterlegt werden (zwecks Weiterentwicklung, Wartung etc.)
