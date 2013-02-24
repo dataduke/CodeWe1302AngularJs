@@ -2,7 +2,7 @@
 
 * Idee: Evaluierung diverser JavaScript Frameworks
    * siehe https://github.com/dataduke/Bestellung-AngularJS/wiki
-* Implementierte Testapplikationen zur Evaluierung:
+* Implementierte Testapplikationen für Evaluierung:
  * Backbone.js mit Underscore.js und Docco https://github.com/sebastianfuss/backbone-test
  * JavaScriptMVC mit StealJS, DocumentJS, jQuery und FuncUnit (QUnit, Selenium, Jasmine) https://github.com/realthargor/javascriptMVCCodingWe
  * _Hier:_ __AngularJS & AngularUI__ mit Bootstrap und jQueryUI
