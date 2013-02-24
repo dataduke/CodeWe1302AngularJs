@@ -1,5 +1,5 @@
 
-# Coding WE Project 
+# Coding Weekend Project 
 
 * Idee: Evaluierung diverser JavaScript Frameworks
 * Hier: AngularJS mit Bootstrap und JQuery
