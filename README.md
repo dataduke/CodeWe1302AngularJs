@@ -11,7 +11,7 @@
 
 1. Personendaten erfassen
 2. Adressdaten erfassen (noch nicht eingebunden)
-3. Zusammenfassung anzeigen, best�tigen, absenden
+3. Zusammenfassung anzeigen, bestätigen, absenden
 4. Ende mit Link zur Neubestellung
 
 ## Konzepte von AngularJS
