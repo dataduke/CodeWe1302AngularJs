@@ -1,13 +1,13 @@
-# Coding Weekend Project 
+# JavaScript Framework Evualuierung von AngularJS
 
 * Idee: Evaluierung diverser JavaScript Frameworks
-   * siehe https://github.com/dataduke/CodeWe1302AngularJs/wiki
+   * siehe https://github.com/dataduke/CodeWe1302JavaScript
 * Implementierte Testapplikationen für Evaluierung:
  * Backbone.js mit Underscore.js und Docco https://github.com/sebastianfuss/backbone-test
  * JavaScriptMVC mit StealJS, DocumentJS, jQuery und FuncUnit (QUnit, Selenium, Jasmine) https://github.com/realthargor/javascriptMVCCodingWe
  * _Hier:_ __AngularJS & AngularUI__ mit Bootstrap und jQueryUI
  
-## Implementierter Business Prozess
+## Implementierter Business Prozess mit AngularJS
 
 1. Personendaten erfassen
 2. Adressdaten erfassen (noch nicht eingebunden)
