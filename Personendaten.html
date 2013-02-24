@@ -1,0 +1,62 @@
+<html ng-app="pdApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js"></script>
+    <script type="text/javascript" src="angularui/angular-ui.js"></script>
+    <link href="angularui/angular-ui.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="personendaten-controller.js"></script>
+    <title></title>
+</head>
+
+<body>
+   <div ng-controller="pdctrl">
+   <form class="form-horizontal" ng-submit="submit()" name="PersonendatenForm">
+
+       <div class="control-group" ng-class="{error: PersonendatenForm.Name.$invalid}">
+           <label for="Name">Name</label>
+           <input id="NameId" name="Name" type="text" ng-model="personendaten.name"
+                  required oninvalid="this.setCustomValidity('Bitte Wert eingeben!')">
+                  </input>
+           <span ng-show="PersonendatenForm.Name.$error.required" class="help-inline">(Pflichtfeld)</span>
+       </div>
+
+       <div class="control-group" ng-class="{error: PersonendatenForm.Vorname.$invalid}">
+           <label for="Vorname">Vorname</label>
+           <input id="VornameId" name="Vorname" type="text" ng-model="personendaten.vorname" required
+                  required oninvalid="this.setCustomValidity('Bitte Wert eingeben!')"></input>
+           <span ng-show="PersonendatenForm.Vorname.$error.required" class="help-inline">(Pflichtfeld)</span>
+       </div>
+
+       <div class="control-group" ng-class="{error: PersonendatenForm.Geburtstag.$invalid}">
+           <label for="Geburtstag">Geburtstag</label>
+           <input id="GeburtstagId" name="Geburtstag" ng-model="personendaten.geburtstag" type="text"
+                  required oninvalid="this.setCustomValidity('Bitte Wert eingeben!')" ui-date></input>
+           <span ng-show="PersonendatenForm.Geburtstag.$error.required" class="help-inline">(Pflichtfeld)</span>
+       </div>
+
+       <div class="control-group">
+            <label for="Kreditkartennummer">Kreditkartennummer</label>
+            <input id="KreditkartennummerId" name="Kreditkartennummer"
+                   type="text"
+                   ng-pattern='/[0-9]{10}/'
+                   ng-model="personendaten.kreditkartennummer"
+                   required oninvalid="this.setCustomValidity('Bitte zehnstellige Zahl eingeben!')"></input>
+            <span ng-show="PersonendatenForm.Kreditkartennummer.$error.required" class="help-inline">(Pflichtfeld)</span>
+            <span ng-show="PersonendatenForm.Kreditkartennummer.$error.pattern" class="help-inline">(Formatfehler, keine zehnstellige Zahl.)</span>
+       </div>
+
+       <br>
+       <button class="btn" type="submit" ng-hide="!PersonendatenForm.$valid"> Weiter</button>
+       </form>
+
+   </div>
+</body>
+<script>
+
+</script>
+</html>

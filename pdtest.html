@@ -1,0 +1,65 @@
+<html ng-app>
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.0/css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
+
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js"></script>
+    <script type="text/javascript" src="angularui/angular-ui.js"></script>
+    <link href="angularui/angular-ui.css" rel="stylesheet" media="screen">
+
+    <link href="bootstrap.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript" src="personendaten-controller.js"></script>
+    <title></title>
+
+    <script>  $(function() {
+        $( "#datepicker" ).datepicker();
+    });
+    </script>
+</head>
+
+<body>
+<div ng-controller="pdctrl">
+    <form class="form-horizontal" ng-submit="submit()">
+
+        <!-- <ng-form name="personendaten"> -->
+
+        <label for="Name">Name</label>
+        <input id="Name" type="text" ng-model="personendaten.name"></input>
+
+        <label for="Vorname">Vorname</label>
+        <input title="Vorname" type="text" ng-model="personendaten.vorname"></input>
+
+        <label for="Geburtstag">Geburtstag</label>
+        <input title="Geburtstag" ng-model="personendaten.geburtstag" type="text"></input>
+
+        <ng-form name="dateForm" class="ng-pristine ng-valid">
+        <label for="Geburtstag">Geburtstag</label>
+        <input title="Geburtstag" ng-model="personendaten.geburtstag" type="text" id="datepicker"></input>
+             <p>
+                 <input title="Geburtstag" ng-model="personendaten.geburtstag" type="text" ui-date id="datepicker"></input>
+             </p>
+        </ng-form>
+
+        <label for="Kreditkartennummer">Kreditkartennummer</label>
+        <input title="Kreditkartennummer" type="text" ng-model="personendaten.kreditkartennummer"></input>
+
+        <br>
+        <button class="btn" type="submit">Weiter</button>
+
+        <!--</ng-form> -->
+    </form>
+
+</div>
+</body>
+<script>
+
+
+
+
+
+</script>
+</html>

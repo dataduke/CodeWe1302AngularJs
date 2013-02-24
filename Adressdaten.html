@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.1/angular.min.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="angularui/angular-ui.js"></script>
+    <link href="angularui/angular-ui.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="personendaten-controller.js"></script>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="adctrl">
+    <form class="form-horizontal" ng-submit="submit()">
+
+        <label for="Land">Land</label>
+        <input id="Land" type="text" ng-model="adressdaten.land"></input>
+
+        <label for="Strasse">Straße</label>
+        <input title="Strasse" type="text" ng-model="adressdaten.strasse"></input>
+
+        <label for="Hausnummer">Nr</label>
+        <input title="Hausnummer" type="text" ng-model="adressdaten.nr"></input>
+
+        <label for="PLZ">PLZ</label>
+        <input title="PLZ" type="text" ng-model="adressdaten.plz"></input>
+
+        <label for="Wohnhaft">Kreditkartennummer</label>
+        <input title="Wohnhaft" type="text" ng-model="adressdaten.wohnhaft"></input>
+
+        <br>
+        <button class="btn" type="submit">Weiter</button>
+    </form>
+</div>
+
+
+</body>
+</html>
