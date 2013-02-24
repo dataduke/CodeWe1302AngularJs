@@ -18,8 +18,8 @@
 
 Trennung von (by Design):
 
-* deklarative HTML-Seiten mit Validierung und
-* imperative JavaScript-Controller mit ViewModels
+* deklarativen HTML-Seiten mit Validierung und
+* imperativen JavaScript-Controllern mit ViewModels
 
 ## Implementierung von AngularJS
 
