@@ -1,14 +1,14 @@
-
 # Coding Weekend Project 
 
 * Idee: Evaluierung diverser JavaScript Frameworks
+  * siehe https://github.com/dataduke/Bestellung-AngularJS/wiki
 * Hier: AngularJS mit Bootstrap und JQuery
 
 ## Business Prozess
 
 1. Personendaten erfassen
 2. Adressdaten erfassen (noch nicht eingebunden)
-3. Zusammenfassung anzeigen, bestätigen, absenden
+3. Zusammenfassung anzeigen, bestï¿½tigen, absenden
 4. Ende mit Link zur Neubestellung
 
 ## Konzept
