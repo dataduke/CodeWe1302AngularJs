@@ -1,7 +1,7 @@
 # Coding Weekend Project 
 
 * Idee: Evaluierung diverser JavaScript Frameworks
-   * siehe https://github.com/dataduke/CodeWe1301AngularJs/wiki
+   * siehe https://github.com/dataduke/CodeWe1302AngularJs/wiki
 * Implementierte Testapplikationen für Evaluierung:
  * Backbone.js mit Underscore.js und Docco https://github.com/sebastianfuss/backbone-test
  * JavaScriptMVC mit StealJS, DocumentJS, jQuery und FuncUnit (QUnit, Selenium, Jasmine) https://github.com/realthargor/javascriptMVCCodingWe
